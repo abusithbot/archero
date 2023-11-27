@@ -20,6 +20,12 @@ public class KillCount : ScriptableObject
             T = TextMeshProGameobjectRef.GetComponent<TextMeshProUGUI>();
             T.text = _count.ToString();
 
+            if(count == 10) 
+            {
+                Time.timeScale = 0;
+                GameObject.Find("Canvas").transform.Find("reward pannel").gameObject.SetActive(true);
+            }
+
         } 
     }
     private void OnEnable()
