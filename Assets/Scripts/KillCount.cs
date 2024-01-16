@@ -31,8 +31,9 @@ public class KillCount : ScriptableObject
     private void OnEnable()
     {
         _count=0;
+        Debug.Log("remise a 0");
     }
-    void Start()
+  /*  void Start()
     {
         GameObject TextMeshProGameobjectRef = GameObject.Find("Value");
         T = TextMeshProGameobjectRef.GetComponent<TextMeshProUGUI>();
@@ -44,5 +45,5 @@ public class KillCount : ScriptableObject
     {
         T.text = _count.ToString();
         _count ++;
-    }
+    }*/
 }

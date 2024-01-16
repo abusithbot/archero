@@ -10,9 +10,7 @@ public class Collision : MonoBehaviour
         Debug.Log("collision");
         anim.SetTrigger("death");
         Destroy(collision.gameObject);
-        KillCount.count++;
-
-     
+        KillCount.count++;     
     }
     public Animator anim;
 
